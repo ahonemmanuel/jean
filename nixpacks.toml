@@ -1,0 +1,8 @@
+[phases.setup]
+packages = ["php", "php-fpm", "composer", "pdo_mysql"]
+
+[phases.build]
+commands = ["composer install --no-dev --optimize-autoloader"]
+
+[phases.start]
+command = "php-fpm"
