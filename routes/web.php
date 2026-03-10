@@ -1,7 +1,22 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicPageController;
 
-Route::get('/', function () {
-    return view('welcome'); // ou ta vue d'accueil
-});
+/*
+|--------------------------------------------------------------------------
+| Accueil → présentation
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/', fn () => redirect()->route('public.page', 'presentation'));
+
+/*
+|--------------------------------------------------------------------------
+| Pages statiques publiques
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/page/{type}', [PublicPageController::class, 'show'])
+    ->name('public.page')
+    ->where('type', 'presentation|message|programme|projets|gallery');
