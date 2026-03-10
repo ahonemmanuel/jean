@@ -17,6 +17,6 @@ Route::get('/', fn () => redirect()->route('public.page', 'presentation'));
 |--------------------------------------------------------------------------
 */
 
-Route::get('/page/{type}', [PublicPageController::class, 'show'])
+Route::get('/{type}', [PublicPageController::class, 'show'])
     ->name('public.page')
     ->where('type', 'presentation|message|programme|projets|gallery');
