@@ -1787,32 +1787,62 @@
 
             {{-- Principes & Proposition de valeur --}}
             <div class="card" style="padding:1.5rem 1.75rem;margin-bottom:2rem;" data-aos="fade-up">
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;">
-                    <div>
-                        <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin:0 0 0.75rem;">
-                            Nos Principes de Travail
-                        </p>
-                        <div class="principles-row">
-                            <span class="principle-chip">Rigueur</span>
-                            <span class="principle-chip">Écoute</span>
-                            <span class="principle-chip">Transparence</span>
-                            <span class="principle-chip red">Vision</span>
-                            <span class="principle-chip">Esprit d'unité</span>
-                        </div>
+
+                {{-- En-têtes des deux colonnes --}}
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:0.75rem;">
+                    <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin:0;">
+                        Nos Principes de Travail
+                    </p>
+                    <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin:0;">
+                        Notre Proposition de Valeur
+                    </p>
+                </div>
+
+                {{-- Ligne 1 : Rigueur + Écoute → Proposition 1 --}}
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding:0.5rem 0;border-bottom:1px dashed var(--border);align-items:center;">
+                    <div style="display:flex;flex-direction:column;gap:0.4rem;">
+                        <span class="principle-chip" style="width:fit-content;">Rigueur</span>
+                        <span class="principle-chip" style="width:fit-content;">Écoute</span>
                     </div>
-                    <div>
-                        <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin:0 0 0.75rem;">
-                            Notre Proposition de Valeur
-                        </p>
-                        <ul style="list-style:none;padding:0;margin:0;">
-                            @foreach(['Une Direction Technique institutionnelle moderne','Une vision long terme avec des livrables concrets','Une culture de performance, de reconnaissance et d\'inclusion','Une rupture positive avec l\'improvisation organisationnelle'] as $v)
-                                <li style="font-size:0.8rem;color:var(--text-light);padding:0.3rem 0 0.3rem 1.1rem;position:relative;border-bottom:1px dashed var(--border);">
-                                    <span style="position:absolute;left:0;color:var(--red);">→</span>{{ $v }}
-                                </li>
-                            @endforeach
-                        </ul>
+                    <div style="font-size:0.8rem;color:var(--text-light);padding-left:1.1rem;position:relative;line-height:1.5;">
+                        <span style="position:absolute;left:0;color:var(--red);">→</span>
+                        Une Direction Technique institutionnelle moderne
                     </div>
                 </div>
+
+                {{-- Ligne 2 : Transparence → Proposition 2 --}}
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding:0.5rem 0;border-bottom:1px dashed var(--border);align-items:center;">
+                    <div>
+                        <span class="principle-chip" style="width:fit-content;">Transparence</span>
+                    </div>
+                    <div style="font-size:0.8rem;color:var(--text-light);padding-left:1.1rem;position:relative;line-height:1.5;">
+                        <span style="position:absolute;left:0;color:var(--red);">→</span>
+                        Une vision long terme avec des livrables concrets
+                    </div>
+                </div>
+
+                {{-- Ligne 3 : Vision → Proposition 3 --}}
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding:0.5rem 0;border-bottom:1px dashed var(--border);align-items:center;">
+                    <div>
+                        <span class="principle-chip red" style="width:fit-content;">Vision</span>
+                    </div>
+                    <div style="font-size:0.8rem;color:var(--text-light);padding-left:1.1rem;position:relative;line-height:1.5;">
+                        <span style="position:absolute;left:0;color:var(--red);">→</span>
+                        Une culture de performance, de reconnaissance et d'inclusion
+                    </div>
+                </div>
+
+                {{-- Ligne 4 : Esprit d'unité → Proposition 4 --}}
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding:0.5rem 0;align-items:center;">
+                    <div>
+                        <span class="principle-chip" style="width:fit-content;">Esprit d'unité</span>
+                    </div>
+                    <div style="font-size:0.8rem;color:var(--text-light);padding-left:1.1rem;position:relative;line-height:1.5;">
+                        <span style="position:absolute;left:0;color:var(--red);">→</span>
+                        Une rupture positive avec l'improvisation organisationnelle
+                    </div>
+                </div>
+
             </div>
 
             {{-- Axes stratégiques --}}
