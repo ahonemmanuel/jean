@@ -1510,8 +1510,8 @@
                         tout en développant une solide expérience dans l'organisation d'événements musicaux d'envergure nationale et internationale.
                     </p>
                     <p>
-                        Au sein de l'Union des Fanfares de la RELP, il cumule <strong>dix (10) années d'engagement actif</strong>
-                        (2010 – 2020), dont :
+                        Au sein de l'Union des Fanfares, il cumule <strong>dix (10) années d'engagement actif</strong>
+                        (2010 – 2020), dans l'ancien UF-RESMA dont: :
                     </p>
                     <ul style="list-style:none;padding:0;margin:0.5rem 0 0;">
                         <li style="display:flex;align-items:flex-start;gap:0.5rem;font-size:0.85rem;color:var(--text-light);padding:0.25rem 0;">
