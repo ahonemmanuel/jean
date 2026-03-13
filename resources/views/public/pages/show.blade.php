@@ -2032,6 +2032,33 @@
 
             {{-- Grille statique : images dans public/i/ --}}
             <div class="gal-grid">
+                    <div class="gal-item" onclick="openLightbox(0)">
+                    <img src="/i/9.jpeg" alt="Photo galerie 1" loading="lazy">
+                    <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gal-item" onclick="openLightbox(1)">
+                    <img src="/i/6.jpeg" alt="Photo galerie 2" loading="lazy">
+                    <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+
+                <div class="gal-item" onclick="openLightbox(0)">
+                    <img src="/i/7.jpeg" alt="Photo galerie 1" loading="lazy">
+                    <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gal-item" onclick="openLightbox(1)">
+                    <img src="/i/8.jpeg" alt="Photo galerie 2" loading="lazy">
+                    <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+
+                   <div class="gal-item" onclick="openLightbox(0)">
+                    <img src="/i/10.jpeg" alt="Photo galerie 1" loading="lazy">
+                    <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gal-item" onclick="openLightbox(1)">
+                    <img src="/i/11.jpeg" alt="Photo galerie 2" loading="lazy">
+                    <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+
                 <div class="gal-item" onclick="openLightbox(0)">
                     <img src="/i/1.jpeg" alt="Photo galerie 1" loading="lazy">
                     <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
