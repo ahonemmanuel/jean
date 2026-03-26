@@ -9,7 +9,7 @@
     {{-- Open Graph (WhatsApp, Facebook, etc.) --}}
     <meta property="og:site_name" content="UF RELP" />
     <meta property="og:title" content="@yield('og_title', 'UF-RELP — Directeur Technique Principal')" />
-    <meta property="og:description" content="@yield('og_description', 'Komla Mawufemo Jeannot TSONYA — Candidat Directeur Technique Principal UF RELP 2026–2030')" />
+    <meta property="og:description" content="@yield('og_description', 'Komla Mawufemo Jeannot TSONYA — Directeur Technique Principal UF RELP 2026–2030')" />
     <meta property="og:image" content="{{ asset('i/moi.jpeg') }}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
