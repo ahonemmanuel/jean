@@ -8,7 +8,7 @@
 
     {{-- Open Graph --}}
     <meta property="og:title" content="UF-RELP" />
-    <meta property="og:description" content="Candidat au poste de Directeur Technique Principal (UF RELP 2026 – 2030)" />
+    <meta property="og:description" content="Directeur Technique Principal (UF RELP 2026 – 2030)" />
     <meta property="og:image" content="{{ asset('images/share-default.jpg') }}" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:type" content="website" />
