@@ -1,7 +1,7 @@
 {{-- resources/views/public/pages/show.blade.php --}}
 @extends('layouts.pu')
 
-@php $pageTitles = ['presentation'=>'Présentation du Candidat','message'=>'Mon Message','programme'=>'Notre Programme de Mandat','projets'=>'Nos Projets Clés & Nos Engagements','gallery'=>'Galerie']; @endphp
+@php $pageTitles = ['presentation'=>'Présentation du UF-RELP — Directeur Technique Principal','message'=>'Mon Message','programme'=>'Notre Programme de Mandat','projets'=>'Nos Projets Clés & Nos Engagements','gallery'=>'Galerie']; @endphp
 @section('title', ($pageTitles[$page->type] ?? 'UF RELP') . ' — UF RELP')
 
 @section('content')

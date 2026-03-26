@@ -6,20 +6,25 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', config('app.name')) - {{ config('app.name') }}</title>
 
-    {{-- Open Graph --}}
-    <meta property="og:title" content="UF-RELP" />
-    <meta property="og:description" content="Directeur Technique Principal (UF RELP 2026 – 2030)" />
-    <meta property="og:image" content="{{ asset('images/share-default.jpg') }}" />
+    {{-- Open Graph (WhatsApp, Facebook, etc.) --}}
+    <meta property="og:site_name" content="UF RELP" />
+    <meta property="og:title" content="@yield('og_title', 'UF-RELP — Directeur Technique Principal')" />
+    <meta property="og:description" content="@yield('og_description', 'Komla Mawufemo Jeannot TSONYA — Candidat Directeur Technique Principal UF RELP 2026–2030')" />
+    <meta property="og:image" content="{{ asset('i/moi.jpeg') }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
 
     {{-- Twitter Card --}}
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="UF RELP" />
-    <meta name="twitter:description" content="Découvrez nos formations, programmes et actualités" />
-    <meta name="twitter:image" content="{{ asset('images/share-default.jpeg') }}" />
+    <meta name="twitter:title" content="@yield('og_title', 'UF RELP')" />
+    <meta name="twitter:description" content="@yield('og_description', 'Découvrez notre programme et nos projets')" />
+    <meta name="twitter:image" content="{{ asset('i/moi.jpeg') }}" />
 
-    <link rel="icon" type="image/jpeg" href="{{ asset('images/eept.jpeg') }}">
+    <link rel="icon" type="image/jpeg" href="{{ asset('i/moi.jpeg') }}">
 
     <!-- Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
